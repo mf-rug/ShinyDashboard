@@ -23,6 +23,13 @@ dashboardPage(
     tabItems(
       tabItem(tabName = "AA2Codon",
               h2("AA2Codon"),
+              tags$a(
+                href="AA2Cod", 
+                tags$img(src="AA2Cod.png", 
+                         title="Example Image Link", 
+                         width="600",
+                         height="400")
+              ),
               HTML("<i><h4>A tiny shiny app that calculates possible codons given a selection of amino acids</h4></i>"),
               fluidRow(
                 box(HTML('<a href="AA2Cod">Access app</a>'))

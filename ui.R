@@ -113,7 +113,7 @@ dashboardPage(
       tabItem(tabName = "GroupStack",
               h2("GroupStack"),
               HTML("<i><h4>Our internal stackoverflow-like Q&A site.</h4></i>"),
-              div(class = 'frame', 
+              div(class = 'frame2', 
                   tags$a(
                     href="https://stackoverflow.com/c/rug-comp-biotech/questions", 
                     tags$img(src="/SO.png", 

@@ -23,8 +23,8 @@ dashboardPage(
     tabItems(
       tabItem(tabName = "AA2Codon",
               h2("AA2Codon"),
+              HTML("<i><h4>A tiny shiny app that calculates possible codons given a selection of amino acids</h4></i>"),
               fluidRow(
-                box(HTML("<strong>A tiny shiny app that calculates possible codons given a selection of amino acids</strong>")),
                 box(HTML('<a href="AA2Cod">Access app</a>'))
               )
       ),

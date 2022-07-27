@@ -58,7 +58,6 @@ dashboardPage(
                              width="60%")
                   ))
       ),
-      ),
       tabItem(tabName = "TweetRial",
               h2("TweetRial")
       ),

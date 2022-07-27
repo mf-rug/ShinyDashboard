@@ -26,10 +26,9 @@ dashboardPage(
               HTML("<i><h4>A tiny shiny app that calculates possible codons given a selection of amino acids</h4></i>"),
               tags$a(
                 href="AA2Cod", 
-                tags$img(src="AA2Cod.png", 
+                tags$img(src="/AA2Cod.png", 
                          title="Example Image Link", 
-                         width="600",
-                         height="400")
+                         width="60%")
               )
       ),
       tabItem(tabName = "MultiplePrimerEntry",

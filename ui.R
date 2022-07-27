@@ -25,7 +25,7 @@ dashboardPage(
               h2("AA2Codon"),
               tags$a(
                 href="AA2Cod", 
-                tags$img(src="AA2Cod.png", 
+                tags$img(src="./AA2Cod.png", 
                          title="Example Image Link", 
                          width="600",
                          height="400")

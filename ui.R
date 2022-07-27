@@ -24,11 +24,8 @@ dashboardPage(
       tabItem(tabName = "AA2Codon",
               h2("AA2Codon"),
               fluidRow(
-                box("plot1"),
-                box(title = "Controls",
-                    sliderInput("slider", "Number of observations:", 1, 100, 50)
-                )
-              )
+                box(h4("A tiny shiny app that calculates possible codons given a selection of amino acids")),
+                box(h4(HTML('<a href="www.google.com">test</a>')))
       ),
       tabItem(tabName = "MultiplePrimerEntry",
               h2("MultiplePrimerEntry")

@@ -52,7 +52,7 @@ dashboardPage(
               HTML("<i><h4>A tiny shiny app that conveniently converts variable input of primer names and sequences to a copy and paste ready output for various vendor platforms.</h4></i>"),
               div(class = 'frame', 
                   tags$a(
-                    href="AA2Cod", 
+                    href="MultiplePrimers", 
                     tags$img(src="/MPI.png", 
                              title="Access App", 
                              width="80%")
@@ -60,51 +60,51 @@ dashboardPage(
       ),
       tabItem(tabName = "TweetRial",
               h2("TweetRial"),
-              HTML("<i><h4>A tiny shiny app that conveniently converts variable input of primer names and sequences to a copy and paste ready output for various vendor platforms.</h4></i>"),
+              HTML("<i><h4>A tiny shiny app that to prepare tweetorials (twitter threads).</h4></i>"),
               div(class = 'frame', 
                   tags$a(
                     href="tweetRial", 
-                    tags$img(src="/MPI.png", 
+                    tags$img(src="/TweetRial.png", 
                              title="Access App", 
                              width="80%")
                   ))
       ),
       tabItem(tabName = "WordleBattle",
               h2("WordleBattle"),
-              HTML("<i><h4>A tiny shiny app that conveniently converts variable input of primer names and sequences to a copy and paste ready output for various vendor platforms.</h4></i>"),
+              HTML("<i><h4>A not so tiny shiny app to play a game inspired by the legendary wordle.</h4></i>"),
               div(class = 'frame', 
                   tags$a(
                     href="wordle_battle_en", 
-                    tags$img(src="/MPI.png", 
+                    tags$img(src="/wb.png", 
                              title="Access App", 
                              width="80%")
                   ))
       ),
       tabItem(tabName = "AFAS",
               h2("AFAS"),
-              HTML("<i><h4>A tiny shiny app that conveniently converts variable input of primer names and sequences to a copy and paste ready output for various vendor platforms.</h4></i>"),
+              HTML("<i><h4>A tiny shiny app to search the internal webshop catalogue for purchasing.</h4></i>"),
               div(class = 'frame', 
                   tags$a(
                     href="AFAS", 
-                    tags$img(src="/MPI.png", 
+                    tags$img(src="/AFAS.png", 
                              title="Access App", 
                              width="80%")
                   ))
       ),
       tabItem(tabName = "AlphaFold",
               h2("AlphaFold"),
-              HTML("<i><h4>A tiny shiny app that conveniently converts variable input of primer names and sequences to a copy and paste ready output for various vendor platforms.</h4></i>"),
+              HTML("<i><h4>A tiny shiny app to submit Alphafold prediciton jobs to the computer cluster.</h4></i>"),
               div(class = 'frame', 
                   tags$a(
                     href="AF_on_cluster", 
-                    tags$img(src="/MPI.png", 
+                    tags$img(src="/AF.png", 
                              title="Access App", 
                              width="80%")
                   ))
       ),
       tabItem(tabName = "GroupStack",
               h2("GroupStack"),
-              HTML("<i><h4>A tiny shiny app that conveniently converts variable input of primer names and sequences to a copy and paste ready output for various vendor platforms.</h4></i>"),
+              HTML("<i><h4>Our internal stackoverflow-like Q&A site.</h4></i>"),
               div(class = 'frame', 
                   tags$a(
                     href="https://stackoverflow.com/c/rug-comp-biotech/questions", 

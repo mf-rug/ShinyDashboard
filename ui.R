@@ -29,6 +29,14 @@ dashboardPage(
         margin: auto;
         padding: 15px 10px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+     .frame2 {
+        width: 45vw;
+        border: 3px solid white;
+        background: #eee;
+        margin: auto;
+        padding: 15px 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     img {
       width: 100%;
@@ -72,12 +80,12 @@ dashboardPage(
       tabItem(tabName = "WordleBattle",
               h2("WordleBattle"),
               HTML("<i><h4>A not so tiny shiny app to play a game inspired by the legendary wordle.</h4></i>"),
-              div(class = 'frame', 
+              div(class = 'frame2', 
                   tags$a(
                     href="wordle_battle_en", 
                     tags$img(src="/wb.png", 
                              title="Access App", 
-                             width="80%")
+                             width="50%")
                   ))
       ),
       tabItem(tabName = "AFAS",
@@ -94,7 +102,7 @@ dashboardPage(
       tabItem(tabName = "AlphaFold",
               h2("AlphaFold"),
               HTML("<i><h4>A tiny shiny app to submit Alphafold prediciton jobs to the computer cluster.</h4></i>"),
-              div(class = 'frame', 
+              div(class = 'frame2', 
                   tags$a(
                     href="AF_on_cluster", 
                     tags$img(src="/AF.png", 
@@ -108,7 +116,7 @@ dashboardPage(
               div(class = 'frame', 
                   tags$a(
                     href="https://stackoverflow.com/c/rug-comp-biotech/questions", 
-                    tags$img(src="/MPI.png", 
+                    tags$img(src="/SO.png", 
                              title="Access App", 
                              width="80%")
                   ))

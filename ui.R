@@ -1,7 +1,12 @@
 library(shinydashboard)
 
 dashboardPage(
-  dashboardHeader(title = 'Fürstlab Shiny Apps'),
+  dashboardHeader(title = "Shiny Apps by Fürstlab",
+                  tags$li(a(href = 'http://www.fuerstlab.com',
+                            img(src = 'logo_wide_next.png',
+                                title = "Shiny Apps by Fürstlab", height = "100px"),
+                            style = "padding-top:10px; padding-bottom:10px;"),
+                          class = "dropdown")),
   dashboardSidebar(
     sidebarMenu(
       menuItem("Tiny Shiny Bio Tools", tabName = "Tiny Shiny Bio Tools", icon = icon("wrench"), startExpanded = TRUE, 
@@ -21,6 +26,17 @@ dashboardPage(
   ),
   dashboardBody(
     tags$head(
+      tags$style(HTML(
+        '.customHeader { 
+        font-size: 11px;
+        line-height: 50px;
+        text-align: left;
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        padding: 0 15px;
+        overflow: hidden;
+        color: red;
+      }
+    ')),
       tags$style(HTML("
       .frame {
         width: 70vw;
@@ -52,6 +68,11 @@ dashboardPage(
       height: 100%;
     }"))
     ),
+    tags$script(HTML('
+      $(document).ready(function() {
+        $("header").find("nav").append(\'<span class="customHeader"> <a href = "https://www.fuerstlab.com"><font color ="white">Scientific and non-scientific apps made by Max.</font></a> </span>\');
+      })
+     ')),
     tabItems(
       tabItem(tabName = "AA2Codon",
               h2("AA2Codon"),

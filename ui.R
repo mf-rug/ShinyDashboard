@@ -37,6 +37,15 @@ dashboardPage(
         margin: auto;
         padding: 15px 10px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     }
+     .frame3 {
+        height: 75vh;
+        width: 47vh;
+        border: 3px solid white;
+        background: #eee;
+        margin: auto;
+        padding: 15px 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     img {
       width: 100%;
@@ -46,7 +55,7 @@ dashboardPage(
     tabItems(
       tabItem(tabName = "AA2Codon",
               h2("AA2Codon"),
-              HTML("<i><h4>A tiny shiny app that calculates possible codons, given a selection of amino acids</h4></i>"),
+              HTML("<i><h4>A tiny shiny app that calculates possible codons, given a selection of amino acids</h4></i>"),br(),
               div(class = 'frame', 
                   tags$a(
                   href="AA2Cod", 
@@ -57,7 +66,7 @@ dashboardPage(
       ),
       tabItem(tabName = "MultiplePrimerEntry",
               h2("MultiplePrimerEntry"),
-              HTML("<i><h4>A tiny shiny app that conveniently converts variable input of primer names and sequences to a copy and paste ready output for various vendor platforms.</h4></i>"),
+              HTML("<i><h4>A tiny shiny app that conveniently converts variable input of primer names and sequences to a copy and paste ready output for various vendor platforms.</h4></i>"),br(),
               div(class = 'frame', 
                   tags$a(
                     href="MultiplePrimers", 
@@ -68,7 +77,7 @@ dashboardPage(
       ),
       tabItem(tabName = "TweetRial",
               h2("TweetRial"),
-              HTML("<i><h4>A tiny shiny app that to prepare tweetorials (twitter threads).</h4></i>"),
+              HTML("<i><h4>A tiny shiny app to prepare tweetorials (twitter threads).</h4></i>"),br(),
               div(class = 'frame', 
                   tags$a(
                     href="tweetRial", 
@@ -79,7 +88,7 @@ dashboardPage(
       ),
       tabItem(tabName = "WordleBattle",
               h2("WordleBattle"),
-              HTML("<i><h4>A not so tiny shiny app to play a game inspired by the legendary wordle.</h4></i>"),
+              HTML("<i><h4>A not so tiny shiny app to play a game inspired by the legendary wordle.</h4></i>"),br(),
               div(class = 'frame2', 
                   tags$a(
                     href="wordle_battle_en", 
@@ -90,7 +99,7 @@ dashboardPage(
       ),
       tabItem(tabName = "AFAS",
               h2("AFAS"),
-              HTML("<i><h4>A tiny shiny app to search the internal webshop catalogue for purchasing.</h4></i>"),
+              HTML("<i><h4>A tiny shiny app to search the internal webshop catalogue for purchasing.</h4></i>"),br(),
               div(class = 'frame', 
                   tags$a(
                     href="AFAS", 
@@ -101,7 +110,7 @@ dashboardPage(
       ),
       tabItem(tabName = "AlphaFold",
               h2("AlphaFold"),
-              HTML("<i><h4>A tiny shiny app to submit Alphafold prediciton jobs to the computer cluster.</h4></i>"),
+              HTML("<i><h4>A tiny shiny app to submit Alphafold prediciton jobs to the computer cluster.</h4></i>"),br(),
               div(class = 'frame2', 
                   tags$a(
                     href="AF_on_cluster", 
@@ -112,13 +121,12 @@ dashboardPage(
       ),
       tabItem(tabName = "GroupStack",
               h2("GroupStack"),
-              HTML("<i><h4>Our internal stackoverflow-like Q&A site.</h4></i>"),
-              div(class = 'frame2', 
+              HTML("<i><h4>Our internal stackoverflow-like Q&A site.</h4></i>"),br(),
+              div(class = 'frame3', 
                   tags$a(
                     href="https://stackoverflow.com/c/rug-comp-biotech/questions", 
                     tags$img(src="/SO.png", 
-                             title="Access App", 
-                             width="80%")
+                             title="Access App")
                   ))
       )
     )

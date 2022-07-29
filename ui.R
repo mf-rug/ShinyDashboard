@@ -10,15 +10,15 @@ dashboardPage(
   dashboardSidebar(
     sidebarMenu(id = "tab_menu",
       menuItem("Tiny Shiny Bio Tools", tabName = "Tiny Shiny Bio Tools", icon = icon("wrench"), startExpanded = TRUE, 
-               menuSubItem("AA2Codon", "AA2Codon"),
-               menuSubItem("MultiplePrimerEntry", "MultiplePrimerEntry")
+               menuSubItem("AA2Codon", "AA2Codon", icon = icon("external-link-alt")),
+               menuSubItem("MultiplePrimerEntry", "MultiplePrimerEntry", icon = icon("external-link-alt"))
       ),
       menuItem("Other", tabName = "Other", icon = icon("th"), startExpanded = TRUE,
                menuSubItem("TweetRial", "TweetRial", icon = icon("external-link-alt")),
                menuSubItem("WordleBattle", "WordleBattle", icon = icon("external-link-alt"))
       ),
       menuItem("Group-internal", tabName = "Group-internal", icon = icon("user"), startExpanded = TRUE,
-               menuSubItem("AFAS", "AFAS"),
+               menuSubItem("AFAS", "AFAS", icon = icon("external-link-alt")),
                menuSubItem("AlphaFold", "AlphaFold", icon = icon("key")),
                menuSubItem("GroupStack", "GroupStack", icon = icon("external-link-alt"))
                )
@@ -77,12 +77,24 @@ dashboardPage(
       tabItem(tabName = "AA2Codon",
               h2("AA2Codon"),
               HTML("<i><h4>A tiny shiny app that calculates possible codons, given a selection of amino acids</h4></i>"),tags$hr(style="border-color: black;"),
-              HTML('<iframe height="1800" width="100%" frameborder="no" src="https://shiny.fuerstlab.com/AA2Cod"> </iframe>'),br()
+              div(class = 'frame', 
+                  tags$a(
+                  href="AA2Cod", 
+                  tags$img(src="/AA2Cod.png", 
+                           title="Access App", 
+                           width="80%")
+              ))
       ),
       tabItem(tabName = "MultiplePrimerEntry",
               h2("MultiplePrimerEntry"),
               HTML("<i><h4>A tiny shiny app that conveniently converts variable input of primer names and sequences to a copy and paste ready output for various vendor platforms.</h4></i>"),tags$hr(style="border-color: black;"),
-              HTML('<iframe height="1800" width="100%" frameborder="no" src="https://shiny.fuerstlab.com/MultiplePrimers"> </iframe>'),br()
+              div(class = 'frame', 
+                  tags$a(
+                    href="MultiplePrimers", 
+                    tags$img(src="/MPI.png", 
+                             title="Access App", 
+                             width="80%")
+                  ))
       ),
       tabItem(tabName = "TweetRial",
               h2("TweetRial"),
@@ -109,8 +121,13 @@ dashboardPage(
       tabItem(tabName = "AFAS",
               h2("AFAS"),
               HTML("<i><h4>A tiny shiny app to search the internal webshop catalogue for purchasing.</h4></i>"),tags$hr(style="border-color: black;"),
-              HTML('<iframe width="100%" frameborder="no" src="https://shiny.fuerstlab.com/AFAS"> </iframe>'),br()
-      ),
+              div(class = 'frame2', 
+                  tags$a(
+                    href="AFAS", 
+                    tags$img(src="/AFAS.png", 
+                             title="Access App", 
+                             width="80%")
+                  ))      ),
       tabItem(tabName = "AlphaFold",
               h2("AlphaFold"),
               HTML("<i><h4>A tiny shiny app to submit Alphafold prediciton jobs to the computer cluster.</h4></i>"),tags$hr(style="border-color: black;"),

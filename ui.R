@@ -8,7 +8,7 @@ dashboardPage(
                             style = "padding-top:10px; padding-bottom:10px;"),
                           class = "dropdown")),
   dashboardSidebar(
-    sidebarMenu(
+    sidebarMenu(id = "tab_menu",
       menuItem("Tiny Shiny Bio Tools", tabName = "Tiny Shiny Bio Tools", icon = icon("wrench"), startExpanded = TRUE, 
                menuSubItem("AA2Codon", "AA2Codon"),
                menuSubItem("MultiplePrimerEntry", "MultiplePrimerEntry")
@@ -17,10 +17,11 @@ dashboardPage(
                menuSubItem("TweetRial", "TweetRial"),
                menuSubItem("WordleBattle", "WordleBattle")
       ),
-      menuItem("Group-internal", tabName = "Group-internal", icon = icon("key"), startExpanded = TRUE,
+      menuItem("Group-internal", tabName = "Group-internal", icon = icon("user"), startExpanded = TRUE,
                menuSubItem("AFAS", "AFAS"),
-               menuSubItem("AlphaFold", "AlphaFold"),
-               menuSubItem("GroupStack", "GroupStack")
+               menuSubItem("AlphaFold", "AlphaFold", icon = icon("key")),
+               menuSubItem("GroupStack", "GroupStack", icon = icon("external-link-alt")),
+               menuSubItem("Test", "Test")
       )
     )
   ),
@@ -34,7 +35,7 @@ dashboardPage(
         font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
         padding: 0 15px;
         overflow: hidden;
-        color: red;
+        color: white;
       }
     ')),
       tags$style(HTML("
@@ -70,7 +71,7 @@ dashboardPage(
     ),
     tags$script(HTML('
       $(document).ready(function() {
-        $("header").find("nav").append(\'<span class="customHeader"> <a href = "https://www.fuerstlab.com"><font color ="white">Scientific and non-scientific apps made by Max.</font></a> </span>\');
+        $("header").find("nav").append(\'<span class="customHeader"> Scientific and non-scientific apps made by <a href = "https://www.fuerstlab.com/#about"><font color ="white">Max</font></a>. </span>\');
       })
      ')),
     tabItems(
@@ -121,13 +122,7 @@ dashboardPage(
       tabItem(tabName = "AFAS",
               h2("AFAS"),
               HTML("<i><h4>A tiny shiny app to search the internal webshop catalogue for purchasing.</h4></i>"),br(),
-              div(class = 'frame', 
-                  tags$a(
-                    href="AFAS", 
-                    tags$img(src="/AFAS.png", 
-                             title="Access App", 
-                             width="80%")
-                  ))
+              HTML('<iframe width="100%" frameborder="no" src="https://shiny.fuerstlab.com/AFAS"> </iframe>'),br()
       ),
       tabItem(tabName = "AlphaFold",
               h2("AlphaFold"),
@@ -149,6 +144,10 @@ dashboardPage(
                     tags$img(src="/SO.png", 
                              title="Access App")
                   ))
+      ),
+      tabItem(tabName = "Test",
+              h2("Test"),
+              HTML('<iframe width="100%" frameborder="no" src="https://shiny.fuerstlab.com/AFAS"> </iframe>'),br()
       )
     )
   )

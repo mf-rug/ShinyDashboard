@@ -63,6 +63,14 @@ dashboardPage(
         margin: auto;
         padding: 15px 10px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     }
+    .frame4 {
+        width: 60vw;
+        border: 3px solid white;
+        background: #eee;
+        margin: auto;
+        padding: 15px 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     img {
       width: 100%;
@@ -100,18 +108,18 @@ dashboardPage(
       tabItem(tabName = "IDT2gb",
               h2("IDT2gb"),
               HTML("<i><h4>A tiny shiny app that converts IDT-like base modifications to .gb format.</h4></i>"),tags$hr(style="border-color: black;"),
-              div(class = 'frame', 
+              div(class = 'frame4', 
                   tags$a(
                     href="IDT2gb", 
                     tags$img(src="/IDT2gb.png", 
                              title="Access App", 
-                             width="80%")
+                             width="70%")
                   ))
       ),
       tabItem(tabName = "TweetRial",
               h2("TweetRial"),
               HTML("<i><h4>A tiny shiny app to prepare tweetorials (twitter threads).</h4></i>"), tags$hr(style="border-color: black;"),
-              div(class = 'frame', 
+              div(class = 'frame4', 
                   tags$a(
                     href="tweetRial", 
                     tags$img(src="/TweetRial.png", 

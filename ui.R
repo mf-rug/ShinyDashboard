@@ -24,7 +24,7 @@ dashboardPage(
                menuSubItem("GroupStack", "GroupStack", icon = icon("external-link-alt"))
                )
       )
-    ),
+    ), 
   dashboardBody(
     tags$head(
       tags$style(HTML(

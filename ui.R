@@ -11,6 +11,7 @@ dashboardPage(
     sidebarMenu(id = "tab_menu",
       menuItem("Tiny Shiny Bio Tools", tabName = "Tiny Shiny Bio Tools", icon = icon("wrench"), startExpanded = TRUE, 
                menuSubItem("AA2Codon", "AA2Codon", icon = icon("external-link-alt")),
+               menuSubItem("IDT2gb", "IDT2gb", icon = icon("external-link-alt")),
                menuSubItem("MultiplePrimerEntry", "MultiplePrimerEntry", icon = icon("external-link-alt"))
       ),
       menuItem("Other", tabName = "Other", icon = icon("th"), startExpanded = TRUE,

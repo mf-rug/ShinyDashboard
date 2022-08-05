@@ -96,6 +96,17 @@ dashboardPage(
                              width="80%")
                   ))
       ),
+      tabItem(tabName = "IDT2gb",
+              h2("IDT2gb"),
+              HTML("<i><h4>A tiny shiny app that converts IDT-like base modifications to .gb format.</h4></i>"),tags$hr(style="border-color: black;"),
+              div(class = 'frame', 
+                  tags$a(
+                    href="IDT2gb", 
+                    tags$img(src="/IDT2gb.png", 
+                             title="Access App", 
+                             width="80%")
+                  ))
+      ),
       tabItem(tabName = "TweetRial",
               h2("TweetRial"),
               HTML("<i><h4>A tiny shiny app to prepare tweetorials (twitter threads).</h4></i>"), tags$hr(style="border-color: black;"),

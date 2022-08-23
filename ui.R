@@ -10,18 +10,19 @@ dashboardPage(
   dashboardSidebar(
     sidebarMenu(id = "tab_menu",
       menuItem("Tiny Shiny Bio Tools", tabName = "Tiny Shiny Bio Tools", icon = icon("wrench"), startExpanded = TRUE, 
-               menuSubItem("AA2Codon", "AA2Codon", icon = icon("external-link-alt")),
-               menuSubItem("MultiplePrimerEntry", "MultiplePrimerEntry", icon = icon("external-link-alt")),
-               menuSubItem("IDT2gb", "IDT2gb", icon = icon("external-link-alt"))
+               menuSubItem("CodonUsage", "CodonUsage", icon = icon("arrow-up-right-from-square")),
+               menuSubItem("AA2Codon", "AA2Codon", icon = icon("arrow-up-right-from-square")),
+               menuSubItem("MultiplePrimerEntry", "MultiplePrimerEntry", icon = icon("arrow-up-right-from-square")),
+               menuSubItem("IDT2gb", "IDT2gb", icon = icon("arrow-up-right-from-square"))
       ),
-      menuItem("Other", tabName = "Other", icon = icon("th"), startExpanded = TRUE,
-               menuSubItem("TweetRial", "TweetRial", icon = icon("external-link-alt")),
-               menuSubItem("WordleBattle", "WordleBattle", icon = icon("external-link-alt"))
+      menuItem("Other", tabName = "Other", icon = icon("table-cells"), startExpanded = TRUE,
+               menuSubItem("TweetRial", "TweetRial", icon = icon("arrow-up-right-from-square")),
+               menuSubItem("WordleBattle", "WordleBattle", icon = icon("arrow-up-right-from-square"))
       ),
       menuItem("Group-internal", tabName = "Group-internal", icon = icon("user"), startExpanded = TRUE,
-               menuSubItem("AFAS", "AFAS", icon = icon("external-link-alt")),
+               menuSubItem("AFAS", "AFAS", icon = icon("arrow-up-right-from-square")),
                menuSubItem("AlphaFold", "AlphaFold", icon = icon("key")),
-               menuSubItem("GroupStack", "GroupStack", icon = icon("external-link-alt"))
+               menuSubItem("GroupStack", "GroupStack", icon = icon("arrow-up-right-from-square"))
                )
       )
     ),
@@ -83,16 +84,27 @@ dashboardPage(
       })
      ')),
     tabItems(
+      tabItem(tabName = "CodonUsage",
+              h2("Codon Usage"),
+              HTML("<i><h4>A tiny shiny app that shows the genetic code and the codon usage in all sequenced organisms</h4></i>"),tags$hr(style="border-color: black;"),
+              div(class = 'frame', 
+                  tags$a(
+                  href="AA2Cod", 
+                  tags$img(src="/cod_use.png", 
+                           title="Access App", 
+                           width="80%")
+              ))
+      ),
       tabItem(tabName = "AA2Codon",
               h2("AA2Codon"),
               HTML("<i><h4>A tiny shiny app that calculates possible codons, given a selection of amino acids</h4></i>"),tags$hr(style="border-color: black;"),
               div(class = 'frame', 
                   tags$a(
-                  href="AA2Cod", 
-                  tags$img(src="/AA2Cod.png", 
-                           title="Access App", 
-                           width="80%")
-              ))
+                    href="AA2Cod", 
+                    tags$img(src="/AA2Cod.png", 
+                             title="Access App", 
+                             width="80%")
+                  ))
       ),
       tabItem(tabName = "MultiplePrimerEntry",
               h2("MultiplePrimerEntry"),

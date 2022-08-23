@@ -89,7 +89,7 @@ dashboardPage(
               HTML("<i><h4>A tiny shiny app that shows the genetic code and the codon usage in all sequenced organisms</h4></i>"),tags$hr(style="border-color: black;"),
               div(class = 'frame', 
                   tags$a(
-                  href="AA2Cod", 
+                  href="codon_usage", 
                   tags$img(src="/cod_use.png", 
                            title="Access App", 
                            width="80%")
